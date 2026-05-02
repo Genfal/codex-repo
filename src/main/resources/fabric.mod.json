@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "diamondcurrency",
+  "version": "${version}",
+  "name": "Diamond Currency",
+  "description": "Converts collected diamonds into a currency and shows it in HUD.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.diamondcurrency.DiamondCurrencyMod"
+    ],
+    "client": [
+      "com.example.diamondcurrency.client.DiamondCurrencyClient"
+    ]
+  },
+  "mixins": [
+    "diamondcurrency.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
